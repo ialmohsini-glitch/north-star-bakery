@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+<h1>Contact North Star Bakery</h1>
+    <nav aria-label="Main navigation">
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul>
+    </nav>
+  </header>
+
+  <main>
+  <section>
+    <h2>Questions and Preorder Requests</h2>
+    <p>Use this form to ask a question or request a preorder.</p>
+    <p>This practice form does not send requests to a bakery.</p>
+
+    <form>
+      <fieldset>
+        <legend>Your Contact Information</legend>
+
+        <p>
+          <label for="name">Name (required)</label>
+          <input type="text" id="name" name="name"
+                 autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email"
+                 autocomplete="email" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Request</legend>
+
+        <p>
+          <label for="request-type">Request type (required)</label>
+          <select id="request-type" name="request-type" required>
+            <option value="">Choose an option</option>
+            <option value="preorder">Preorder</option>
+            <option value="question">General question</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="pickup-date">Pickup date (for preorders)</label>
+          <input type="date" id="pickup-date" name="pickup-date">
+        </p>
+
+        <p>
+          <label for="details">Item details or question (required)</label>
+          <textarea id="details" name="details"
+                    rows="5" minlength="10" required></textarea>
+        </p>
+
+        <p>
+          <label for="allergies">Allergy notes (optional)</label>
+          <textarea id="allergies" name="allergies"
+                    rows="3"></textarea>
+        </p>
+      </fieldset>
+
+      <p><button type="submit">Submit Request</button></p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Location and Hours</h2>
+    <p>Sample location: 123 North Star Lane, Minneapolis, MN.</p>
+    <p>Sample hours: Monday–Saturday, 7 a.m.–5 p.m.;
+Sunday, 8 a.m.–2 p.m.</p>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+  </footer>
+</body>
+</html>

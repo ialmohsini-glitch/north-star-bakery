@@ -1,0 +1,197 @@
+/* Include padding and borders in element widths */
+* {
+  box-sizing: border-box;
+}
+
+/* Warm cream background and dark brown text */
+body {
+  margin: 0;
+  background-color: #fff8ee;
+  color: #3b2416;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Bakery-style headings */
+h1,
+h2 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+/* Dark brown links */
+a {
+  color: #3b2416;
+}
+
+/* Header */
+header {
+  background-color: #3b2416;
+  color: #fff8ee;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 16px 0;
+}
+
+/* Flexible navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px 16px;
+  color: #fff8ee;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background-color: #fff8ee;
+  color: #3b2416;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #fff8ee;
+  outline-offset: 3px;
+}
+
+/* Contact form */
+fieldset {
+  min-width: 0;
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid #3b2416;
+  border-radius: 6px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3b2416;
+  border-radius: 4px;
+  background-color: #fff8ee;
+  color: #3b2416;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px 20px;
+  border: 2px solid #3b2416;
+  border-radius: 6px;
+  background-color: #3b2416;
+  color: #fff8ee;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff8ee;
+  color: #3b2416;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #3b2416;
+  outline-offset: 3px;
+}
+/* Page content and images */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+section {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #3b2416;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header img {
+  margin: 0 auto;
+}
+
+audio {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+/* Two-column layout on tablets and computers */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+  }
+
+  main > section {
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  main > p {
+    flex-basis: 100%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+footer {
+  padding: 16px;
+  background-color: #3b2416;
+  color: #fff8ee;
+  text-align: center;
+}
